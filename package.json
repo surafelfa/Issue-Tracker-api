@@ -1,0 +1,39 @@
+{
+  "name": "pro-mern-stack-api",
+  "version": "1.0.0",
+  "description": "Pro MERN Stack API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e js, graphql -w . -w .env server.js",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel src --out-dir public",
+    "watch": "babel src --out-dir public --watch --verbose"
+  },
+  "keywords": [
+    "mern"
+  ],
+  "author": "MERN stack developer",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.25.3",
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "google-auth-library": "^2.0.2",
+    "graphql": "^0.13.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.7.3",
+    "nodemon": "^1.19.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}
