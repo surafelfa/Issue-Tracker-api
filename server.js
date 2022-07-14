@@ -14,7 +14,7 @@ app.use(cookieParser());
 app.use('/auth', auth.routes);
 
 installHandler(app);
-const port = process.env.API_SERVER_PORT || 3000;
+const port = process.env.PORT || 3000;// process.env.API_SERVER_PORT || 3000;
 
 // eslint-disable-next-line func-names
 (async function () {
